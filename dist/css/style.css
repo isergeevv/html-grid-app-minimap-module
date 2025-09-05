@@ -1,0 +1,16 @@
+.app-container > .app-module[data-label=minimap] {
+  position: absolute;
+  bottom: 50px;
+  right: 100px;
+  width: 20vw;
+  height: 20vh;
+  background-color: rgba(var(--gridapp-minimap-bg-color), 1);
+  z-index: 100;
+}
+
+.app-container:has(.app-grid[data-moving=element]) > .app-module[data-label=minimap] {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+/*# sourceMappingURL=style.css.map */
